@@ -1,0 +1,73 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6EE7FF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="520" rx="28" fill="rgba(255,255,255,0.02)"/>
+  <rect x="26" y="26" width="848" height="468" rx="24" fill="rgba(15,23,42,0.55)" stroke="rgba(255,255,255,0.10)" />
+
+  <!-- Glow accents -->
+  <g filter="url(#glow)" opacity="0.25">
+    <circle cx="220" cy="160" r="90" fill="#6EE7FF"/>
+    <circle cx="680" cy="360" r="110" fill="#A78BFA"/>
+  </g>
+
+  <!-- Funnel blocks -->
+  <g>
+    <rect x="110" y="120" width="250" height="70" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="140" y="163" fill="rgba(255,255,255,0.78)" font-family="Arial, Helvetica, sans-serif" font-size="18">Search Intent</text>
+    <rect x="112" y="120" width="8" height="70" rx="4" fill="#6EE7FF"/>
+
+    <rect x="110" y="215" width="250" height="70" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="140" y="258" fill="rgba(255,255,255,0.78)" font-family="Arial, Helvetica, sans-serif" font-size="18">Ad Groups</text>
+    <rect x="112" y="215" width="8" height="70" rx="4" fill="#A78BFA"/>
+
+    <rect x="110" y="310" width="250" height="70" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="140" y="353" fill="rgba(255,255,255,0.78)" font-family="Arial, Helvetica, sans-serif" font-size="18">Landing Page</text>
+    <rect x="112" y="310" width="8" height="70" rx="4" fill="url(#g)"/>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="url(#g)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M365 155 H465"/>
+    <path d="M455 145 L470 155 L455 165"/>
+    <path d="M365 250 H465"/>
+    <path d="M455 240 L470 250 L455 260"/>
+    <path d="M365 345 H465"/>
+    <path d="M455 335 L470 345 L455 355"/>
+  </g>
+
+  <!-- Tracking / KPI panel -->
+  <g>
+    <rect x="490" y="120" width="300" height="260" rx="18" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="520" y="160" fill="rgba(255,255,255,0.78)" font-family="Arial, Helvetica, sans-serif" font-size="18">Measurement</text>
+
+    <rect x="520" y="185" width="240" height="16" rx="8" fill="rgba(255,255,255,0.07)"/>
+    <rect x="520" y="212" width="200" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+    <rect x="520" y="234" width="220" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+
+    <!-- KPI chips -->
+    <rect x="520" y="270" width="90" height="34" rx="12" fill="rgba(110,231,255,0.18)" stroke="rgba(110,231,255,0.35)"/>
+    <text x="548" y="292" fill="rgba(255,255,255,0.75)" font-family="Arial, Helvetica, sans-serif" font-size="14">CPA</text>
+
+    <rect x="620" y="270" width="90" height="34" rx="12" fill="rgba(167,139,250,0.18)" stroke="rgba(167,139,250,0.35)"/>
+    <text x="647" y="292" fill="rgba(255,255,255,0.75)" font-family="Arial, Helvetica, sans-serif" font-size="14">ROAS</text>
+
+    <rect x="520" y="314" width="90" height="34" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="544" y="336" fill="rgba(255,255,255,0.75)" font-family="Arial, Helvetica, sans-serif" font-size="14">CVR</text>
+
+    <rect x="620" y="314" width="90" height="34" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="644" y="336" fill="rgba(255,255,255,0.75)" font-family="Arial, Helvetica, sans-serif" font-size="14">AOV</text>
+  </g>
+
+  <!-- Bottom caption -->
+  <text x="70" y="442" fill="rgba(255,255,255,0.45)" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    Structure → Tracking → Optimization (a repeatable system)
+  </text>
+</svg>
